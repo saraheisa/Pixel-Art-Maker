@@ -77,3 +77,8 @@ input[type="button"] {
   color: #3f1438;
   text-transform: uppercase;
 }
+  
+  
+.error {
+  color: #ff3333
+}

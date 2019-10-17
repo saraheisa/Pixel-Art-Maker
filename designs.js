@@ -6,6 +6,9 @@ const appState = {
 
 const makeGrid = (target) => {
   if (appState.width > 0 && appState.height > 0) {
+
+    document.querySelector('#error').textContent = '';
+
     const canvas = document.querySelector('#pixelCanvas');
     canvas.innerHTML = "";
 
@@ -37,6 +40,8 @@ const makeGrid = (target) => {
       }
       canvas.appendChild(tr);
     }
+  }else{
+    document.querySelector('#error').textContent = 'Width / Height should be 1 or higher'
   }
 }
 
