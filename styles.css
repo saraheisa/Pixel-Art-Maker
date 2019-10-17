@@ -43,6 +43,37 @@ td {
 }
 
 
+form {
+  width: 60%;
+  min-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+div {
+  margin: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
 input[type="number"] {
+  padding: 5px 10px;
   width: 6em;
+  border: 1px solid #3f1438;
+  border-radius: 1.2em;
+  color: #3f1438;
+}
+
+
+input[type="button"] {
+  padding: 5px 10px;
+  width: 12em;
+  background-color: #ffffff;
+  border: 1px solid #3f1438;
+  border-radius: 1.2em;
+  color: #3f1438;
+  text-transform: uppercase;
 }
