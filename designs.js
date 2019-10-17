@@ -56,3 +56,8 @@ const setWidth = (target) => {
 const setHeight = (target) => {
   appState.height = +target.value
 }
+
+  
+const changeColor = ({target}) => {
+  target.style.backgroundColor = appState.color;
+}
