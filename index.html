@@ -29,7 +29,10 @@
     </form>
 
     <h2>Pick A Color</h2>
-    <input type="color" id="colorPicker">
+    <!-- needed to set a different default value for the color
+    because the RGB values doesn't change when a color is selected
+    if the color was #000000 which is the default-->
+    <input type="color" id="colorPicker"  value="#000002">
 
     <h2>Design Canvas</h2>
     <table id="pixelCanvas"></table>
