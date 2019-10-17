@@ -61,3 +61,23 @@ const setHeight = (target) => {
 const changeColor = ({target}) => {
   target.style.backgroundColor = appState.color;
 }
+  
+// just for fun!
+const generateRandomColor = () => {
+  return '#' + Math.random().toString(16).slice(2, 8).toUpperCase();
+}
+
+const generateRandomNumber = () => {
+  return Math.floor(Math.random() * 20)
+}
+
+const randomize = (target) => {
+  const tds = document.querySelectorAll('td');
+  if (tds.length === 0) {
+    document.querySelector('#inputHeight').value = appState.height = generateRandomNumber();
+    document.querySelector('#inputWidth').value = appState.width = generateRandomNumber();
+    makeGrid();
+    randomize();
+  }
+  tds.forEach((td) => td.style.backgroundColor = generateRandomColor());
+}
