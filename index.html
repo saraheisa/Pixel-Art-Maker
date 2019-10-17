@@ -15,16 +15,16 @@
         <div>
             <label for="inputHeight">
                 height
-                <input type="number" id="inputHeight" name="height" min="1" value="1">
+                <input type="number" id="inputHeight" name="height" min="1" value="1" onchange="setHeight(this)" onkeyup="setHeight(this)">
             </label>
 
             <label for="inputWidth">
                 width
-                <input type="number" id="inputWidth" name="width" min="1" value="1">
+                <input type="number" id="inputWidth" name="width" min="1" value="1" onchange="setWidth(this)" onkeyup="setWidth(this)">
             </label>
         </div>
         <div>
-            <input type="button" value="Make Grid">
+            <input type="button" value="Make Grid" onclick="makeGrid(this)" onkeyup="makeGrid(this)">
         </div>
     </form>
 
@@ -32,7 +32,7 @@
     <!-- needed to set a different default value for the color
     because the RGB values doesn't change when a color is selected
     if the color was #000000 which is the default-->
-    <input type="color" id="colorPicker"  value="#000002">
+    <input type="color" id="colorPicker"  value="#000002" onchange="setColor(this)" onkeyup="setColor(this)">
 
     <h2>Design Canvas</h2>
     <table id="pixelCanvas"></table>
